@@ -5,3 +5,20 @@
     padding: 0;
     border: none;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(233, 230, 230);
+}
+
+#logo {
+    color: rgb(34, 194, 34);
+    margin: 20px 0;
+    text-align: center;
+}
+
+#logo i {
+    margin-right: 20px;
+}
+
+/* Button */
