@@ -8,7 +8,6 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: rgb(233, 230, 230);
 }
 
 #logo {
@@ -21,4 +20,34 @@ body {
     margin-right: 20px;
 }
 
-/* Button */
+/* Exercise Section */
+
+#exercise-container {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    column-gap: 80px;
+    margin: 40px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-section, .calender-section {
+    background-color: rgb(29, 57, 214);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.list-section {
+    padding: 25px;
+}
+
+.list-section label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Calender Section */
+
+.calender-section {
+    padding: 50px;
+}
