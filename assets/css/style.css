@@ -20,59 +20,44 @@ body {
     margin-right: 20px;
 }
 
+/* Buttons */
+
+#add-btn {
+    background-color: rgb(20, 220, 20);
+    color: #fff;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background-color: #fff;
+    color: rgb(20, 220, 20);
+    border: 1px solid rgb(20, 220, 20);
+}
+
 /* Exercise Section */
 
 #exercise-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 20% 80%;
     height: 50vh;
-    margin: 50px 30px;
+    column-gap: 10px;
+    margin: 50px 20px;
 }
 
 .exercise-list {
-    background-color: rgb(122, 122, 122);
-    margin-right: 20px;
-    padding: 20px;
-}
-
-.exercise-table {
-    width: 95%;
-    margin: 10px;
-    border-spacing: 10px;
-}
-
-.exercise-table th {
-    background-color: darkturquoise;
-}
-
-.exercise-table td {
-    background-color: forestgreen;
-    color: #fff;
-}
-
-.exercise-table table, th, td {
-    padding: 10px;
-    border: 2px solid #fff;
-    margin: 15px;
+    background-color: rgb(180, 180, 180);
 }
 
 .calender {
-    background-color: darkslateblue;
-    margin-left: 20px;
+    background-color: grey;
 }
 
 
 .submit-container {
-    text-align: center;
-}
-
-.submit-btn {
-    background-color: crimson;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
     text-align: center;
 }
 
