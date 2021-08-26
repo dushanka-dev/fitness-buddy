@@ -23,12 +23,13 @@ body {
 /* Buttons */
 
 #add-btn {
-    background-color: rgb(20, 220, 20);
+    background-color: rgb(220, 140, 20);
     color: #fff;
-    width: 90%;
-    font-size: 16px;
+    width: 100%;
+    font-size: 18px;
     padding: 10px 5px;
     border-radius: 10px;
+    margin: 10px 0;
     cursor: pointer;
 }
 
@@ -38,14 +39,15 @@ body {
     border: 1px solid rgb(20, 220, 20);
 }
 
-/* Exercise Section */
+/* Exercise & Calender Sections */
 
 #exercise-container {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 70%;
     height: 50vh;
-    column-gap: 10px;
+    column-gap: 20px;
     margin: 50px 20px;
+    justify-content: center;
 }
 
 .exercise-list {
@@ -54,6 +56,23 @@ body {
 
 .calender {
     background-color: grey;
+}
+
+.exercise {
+    position: relative;
+    width: 50%;
+    background-color: orange;
+    padding: 10px;
+    border-radius: px;
+    box-shadow: #000;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
 }
 
 
