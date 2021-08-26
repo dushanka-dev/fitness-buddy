@@ -51,3 +51,43 @@ body {
 .calender-section {
     padding: 50px;
 }
+
+/* buttons */
+
+.submit-container {
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: crimson;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* BMI Section */
+
+.bmi-container {
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.calculator-section {
+    background-color: darkgreen;
+    text-align: center;
+    margin: 20px 50px;
+    width: 80%;
+}
+
+.result-section {
+    background-color: darkred;
+    height: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
