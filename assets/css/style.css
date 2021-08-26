@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#logo {
+    color: rgb(34, 194, 34);
+    margin: 20px 0;
+    text-align: center;
+}
+
+#logo i {
+    margin-right: 20px;
+}
+
+/* Exercise Section */
+
+#exercise-container {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    column-gap: 80px;
+    margin: 40px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-section, .calender-section {
+    background-color: rgb(29, 57, 214);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.list-section {
+    padding: 25px;
+}
+
+.list-section label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Calender Section */
+
+.calender-section {
+    padding: 50px;
+}
