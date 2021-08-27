@@ -85,6 +85,28 @@ body {
     background-color:darkgrey;
 }
 
+.calendar-container h2 {
+    margin: 10px 0 15px 10px;
+}
+
+.weekly-todo h3 {
+    font-size: 14px;
+    margin: 10px 0 0 10px;
+}
+
+#exercise-day {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#exercise-day li {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: rgb(20, 190, 220);
+}
+
 .submit-container {
     text-align: center;
 }
