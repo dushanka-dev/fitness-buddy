@@ -20,51 +20,104 @@ body {
     margin-right: 20px;
 }
 
-/* Exercise Section */
+/* Buttons */
+
+#exercise-btn {
+    background-color: rgb(15, 129, 21);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#exercise-btn:hover{
+    background-color: #fff;
+    color: rgb(15, 129, 21);
+}
+
+.delete-btn {
+    background-color: crimson;
+    color: #fff;
+    float: right;
+    padding: 2px 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* ------ Exercise Sections ------ */
 
 #exercise-container {
     display: grid;
-    grid-template-columns: 30% 30%;
-    column-gap: 80px;
-    margin: 40px 50px;
+    grid-template-columns: 25% 70%;
+    height: 50vh;
+    column-gap: 40px;
+    margin: 50px 20px;
     justify-content: center;
-    align-items: center;
 }
 
-.list-section, .calender-section {
-    background-color: rgb(29, 57, 214);
-    color: #fff;
-    border-radius: 10px;
+.exercise-list {
+    background-color: rgb(180, 180, 180);
+    padding: 20px;
 }
 
-.list-section {
-    padding: 25px;
+#exercise-input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
 }
 
-.list-section label {
+#exercise-group {
+    list-style-type: none;
+}
+
+.exercise-items {
     display: block;
-    margin-top: 10px;
+    width: 40%;
+    background-color: rgb(75, 75, 77);
+    color: #fff;
+    padding: 10px 5px;
+    margin: 10px 0;
 }
 
-/* Calender Section */
+/* ------ Calender Sections ------ */
 
-.calender-section {
+.calendar-container {
+    background-color:darkgrey;
+}
+
+.calendar-container h2 {
+    margin: 10px 0 15px 10px;
+}
+
+.week-days {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.day {
+    width: 25%;
+    text-align: center;
+    position: relative;
     padding: 50px;
 }
-
-/* buttons */
-
-.submit-container {
-    text-align: center;
+.day:nth-child(even) {
+    background-color: rgb(112, 126, 165);
 }
 
-.submit-btn {
-    background-color: crimson;
+.day h4 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 97, 10);
     color: #fff;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
+    padding: 10px 0;
+}
+
+.submit-container {
     text-align: center;
 }
 
