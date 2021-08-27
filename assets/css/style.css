@@ -59,7 +59,25 @@ body {
     border-radius: 5px;
 }
 
-.calender {
+#exercise-group {
+    list-style-type: none;
+}
+
+.exercise-items {
+    width: 50%;
+    background-color: rgb(75, 75, 77);
+    color: #fff;
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+
+.exercise-items i {
+    position: absolute;
+    left: 220px;
+    color: crimson;
+}
+
+.calendar {
     background-color: grey;
 }
 
