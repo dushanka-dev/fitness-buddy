@@ -17,6 +17,9 @@ function addExercises(event) {
 
     const newList = document.getElementById('exercise-group')
     const exerciseInputs = document.getElementById('exercise-input').value;
+    
+    // Clear field after input
+    document.getElementById('exercise-input').value = '';
 
     const newExercise = document.createElement('li');
     const removeBtn = document.createElement('button')
@@ -38,6 +41,7 @@ exerciseForm.addEventListener('submit', addExercises);
 
 
 // Remove Exercises from List
+
 
 // Drag Exercise to Calendar
 
