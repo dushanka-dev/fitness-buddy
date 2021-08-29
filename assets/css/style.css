@@ -22,7 +22,7 @@ body {
 
 /* Buttons */
 
-#exercise-btn {
+.exercise-btn {
     background-color: rgb(15, 129, 21);
     color: #fff;
     font-size: 16px;
@@ -32,7 +32,7 @@ body {
     cursor: pointer;
 }
 
-#exercise-btn:hover{
+.exercise-btn:hover{
     background-color: #fff;
     color: rgb(15, 129, 21);
 }
