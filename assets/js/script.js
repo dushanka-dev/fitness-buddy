@@ -21,13 +21,13 @@ function addExercises(event) {
     let newExercise = document.createElement('li');
     let removeBtn = document.createElement('button')
 
-    newExercise.className = 'exercise-items';
+    newExercise.classList.add('exercise-items');
     newExercise.appendChild(document.createTextNode(exerciseInputs));
     newList.appendChild(newExercise);
 
     // Remove Btn
 
-    removeBtn.className = 'delete-btn';
+    removeBtn.classList.add('delete-btn')
     removeBtn.appendChild(document.createTextNode('X'))
     newExercise.appendChild(removeBtn)
 
