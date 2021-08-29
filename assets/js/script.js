@@ -15,11 +15,11 @@ function addExercises(event) {
 
     event.preventDefault();
 
-    let newList = document.getElementById('exercise-group')
-    let exerciseInputs = document.getElementById('exercise-input').value;
+    const newList = document.getElementById('exercise-group')
+    const exerciseInputs = document.getElementById('exercise-input').value;
 
-    let newExercise = document.createElement('li');
-    let removeBtn = document.createElement('button')
+    const newExercise = document.createElement('li');
+    const removeBtn = document.createElement('button')
 
     newExercise.classList.add('exercise-items');
     newExercise.innerText = exerciseInputs;
