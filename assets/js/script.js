@@ -1,15 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
     let addBtn = document.getElementById('exercise-btn');
 
-    addBtn.addEventListener('click', function(event) {
+    addBtn.addEventListener('submit', function(event) {
         if (this.getAttribute('id') === 'exercise-btn') {
-            alert("Hello")
+            addExercises()
         }
     })
 
 })
 
-// Add Exercises
+// Add/Remove Exercises
+
+function addExercises(event) {
+
+    event.preventDefault();
+
+    let newList = document.getElementById('exercise-group')
+    let exerciseInputs = document.getElementById('exercise-input').value;
+
+    let newExercise = document.createElement('li');
+
+    newExercise.className = 'exercise-items';
+    newExercise.appendChild(document.createTextNode(exerciseInputs));
+    newList.appendChild(newExercise)
+
+}
 
 
 // Remove Exercises from List
@@ -22,4 +37,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // BMI Output
 
-//Send data by Email
