@@ -8,3 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
 })
+
+// Add Exercises
+
+
+// Remove Exercises from List
+
+// Drag Exercise to Calendar
+
+// BMI Inputs
+
+// BMI Calculations
+
+// BMI Output
+
+//Send data by Email
