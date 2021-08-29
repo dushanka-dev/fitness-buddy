@@ -29,7 +29,7 @@ function addExercises(event) {
 
     removeBtn.className = 'delete-btn';
     removeBtn.appendChild(document.createTextNode('X'))
-    newExercise.appendChild(newList)
+    newExercise.appendChild(removeBtn)
 
 }
 
