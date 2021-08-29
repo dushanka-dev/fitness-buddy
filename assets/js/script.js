@@ -22,19 +22,19 @@ function addExercises(event) {
     let removeBtn = document.createElement('button')
 
     newExercise.classList.add('exercise-items');
-    newExercise.appendChild(document.createTextNode(exerciseInputs));
+    newExercise.innerText = exerciseInputs;
     newList.appendChild(newExercise);
 
     // Remove Btn
 
-    removeBtn.classList.add('delete-btn')
-    removeBtn.appendChild(document.createTextNode('X'))
-    newExercise.appendChild(removeBtn)
+    removeBtn.classList.add('delete-btn');
+    removeBtn.innerText = 'X';
+    newExercise.appendChild(removeBtn);
 
 }
 
-const addBtn = document.getElementById('exercise-btn');
-addBtn.addEventListener('click', addExercises);
+const exerciseForm = document.getElementById('exercise-form');
+exerciseForm.addEventListener('submit', addExercises);
 
 
 // Remove Exercises from List
