@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+
+    // Exercise List Event Listener
+    const exerciseForms = document.getElementById('exercise-form');
+    exerciseForms.addEventListener('submit', addExercises);
+   
+});
+
 function addExercises(event) {
 
         event.preventDefault();
@@ -23,11 +31,7 @@ function addExercises(event) {
     
     };
 
-document.addEventListener('submit', addExercises);
-
-
 // Remove Exercises from List
-
 
 // Drag Exercise to Calendar
 
