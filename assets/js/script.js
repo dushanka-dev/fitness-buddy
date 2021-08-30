@@ -1,47 +1,41 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     let addBtn = document.getElementById('exercise-btn');
+document.addEventListener("DOMContentLoaded", function() {
 
-//     addBtn.addEventListener('submit', function(event) {
-//         if (this.getAttribute('id') === 'exercise-btn') {
-//             addExercises()
-//         }
-//     })
+    // Exercise List Event Listener
+    const exerciseForms = document.getElementById('exercise-form');
+    exerciseForms.addEventListener('submit', addExercises);
 
-// })
-
-// Add/Remove Exercises
+});
 
 function addExercises(event) {
 
-    event.preventDefault();
-
-    const newList = document.getElementById('exercise-group')
-    const exerciseInputs = document.getElementById('exercise-input').value;
+        event.preventDefault();
     
-    // Clear field after input
-    document.getElementById('exercise-input').value = '';
+        let newList = document.getElementById('exercise-group')
+        let exerciseInputs = document.getElementById('exercise-input').value;
+        let newExercise = document.createElement('li');
+        let removeBtn = document.createElement('button')
+    
+        newExercise.classList.add('exercise-items');
+        newExercise.innerText = exerciseInputs;
+        newList.appendChild(newExercise);
+    
+        // Remove Btn
+        removeBtn.classList.add('delete-btn');
+        removeBtn.innerText = 'X';
+        newExercise.appendChild(removeBtn);
 
-    const newExercise = document.createElement('li');
-    const removeBtn = document.createElement('button')
+        // Clear field after input
+        document.getElementById('exercise-input').value = '';
 
-    newExercise.classList.add('exercise-items');
-    newExercise.innerText = exerciseInputs;
-    newList.appendChild(newExercise);
-
-    // Remove Btn
-
-    removeBtn.classList.add('delete-btn');
-    removeBtn.innerText = 'X';
-    newExercise.appendChild(removeBtn);
-
-}
-
-const exerciseForm = document.getElementById('exercise-form');
-exerciseForm.addEventListener('submit', addExercises);
-
+        // Alert User
+        if (exerciseInputs === '') {
+            confirm("Please Add Exercise!");
+            newExercise.remove('li')
+        }
+    
+    };
 
 // Remove Exercises from List
-
 
 // Drag Exercise to Calendar
 
