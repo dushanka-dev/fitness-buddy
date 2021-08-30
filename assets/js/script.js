@@ -20,7 +20,6 @@ function addExercises(event) {
         newList.appendChild(newExercise);
     
         // Remove Btn
-    
         removeBtn.classList.add('delete-btn');
         removeBtn.innerText = 'X';
         newExercise.appendChild(removeBtn);
@@ -29,7 +28,6 @@ function addExercises(event) {
         document.getElementById('exercise-input').value = '';
 
         // Alert User
-
         if (exerciseInputs === '') {
             confirm("Please Add Exercise!");
             newExercise.remove('li')
