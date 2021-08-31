@@ -40,9 +40,11 @@ body {
 .delete-btn {
     background-color: crimson;
     color: #fff;
+    font-size: 10px;
     float: right;
-    padding: 2px 5px;
+    padding: 2px 4px;
     margin-right: 5px;
+    border-radius: 2px;
     cursor: pointer;
 }
 
@@ -77,8 +79,11 @@ body {
     width: 40%;
     background-color: rgb(75, 75, 77);
     color: #fff;
-    padding: 10px 5px;
+    font-size: 12px;
+    padding: 12px 8px;
     margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /* ------ Calender Sections ------ */
@@ -98,10 +103,9 @@ body {
 }
 
 .day {
-    width: 25%;
+    width: 100%;
     text-align: center;
     position: relative;
-    padding: 50px;
 }
 .day:nth-child(even) {
     background-color: rgb(112, 126, 165);
