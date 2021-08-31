@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const newList = document.getElementById('exercise-group');
 
+
 function addExercises(event) {
 
         event.preventDefault();
@@ -34,7 +35,6 @@ function addExercises(event) {
             confirm("Please Add Exercise!");
             newExercise.remove('li')
         }
-
     };
 
 // Remove Exercises from List
@@ -47,8 +47,9 @@ function deleteExercises(event) {
     }
 }
 
-
 // Drag Exercise to Calendar
+
+// Drag Start
 
 // BMI Inputs
 
