@@ -20,6 +20,7 @@ function addExercises(event) {
         let removeBtn = document.createElement('button');
     
         newExercise.classList.add('exercise-items');
+        newExercise.setAttribute('draggable', 'true')
         newExercise.innerText = exerciseInputs;
         newList.appendChild(newExercise);
         // Remove Btn
