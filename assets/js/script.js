@@ -63,6 +63,9 @@ exerciseLists.forEach((exerciseList) => {
 
 allDays.forEach((day) => {
     day.addEventListener('dragover', dragOver)
+    day.addEventListener('dragenter', dragEnter)
+    day.addEventListener('dragleave', dragLeave)
+    day.addEventListener('drop', dragDrop)
 })
 
 function dragStart() {
@@ -75,6 +78,18 @@ function dragEnd() {
 
 function dragOver() {
     console.log('dragover')
+}
+
+function dragEnter() {
+    console.log('dragenter')
+}
+
+function dragLeave() {
+    console.log('dragLeave')
+}
+
+function dragDrop() {
+    console.log('dragDrop')
 }
 // Drag Start
 
