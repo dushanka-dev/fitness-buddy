@@ -24,6 +24,9 @@ function addExercises(event) {
         newExercise.setAttribute('draggable', 'true')
         newExercise.innerText = exerciseInputs;
         newList.appendChild(newExercise);
+        // Add Draggable Event Listeners
+        newList.addEventListener('dragstart', dragStart)
+        newList.addEventListener('dragend', dragEnd)
         // Remove Btn
         removeBtn.classList.add('delete-btn');
         removeBtn.innerText = 'X';
@@ -48,6 +51,28 @@ function deleteExercises(event) {
 }
 
 // Drag Exercise to Calendar
+
+let exerciseLists = document.querySelectorAll('.exercise-items')
+let allDays = document.querySelectorAll('.drop-area')
+let dragExercise = null;
+
+exerciseLists.forEach((exerciseList) => {
+    exerciseList.addEventListener('dragstart', dragStart)
+    exerciseList.addEventListener('dragend', dragEnd)
+})
+
+allDays.forEach((allDay) => {
+    allDay.addEventListener('dragover', dragOver)
+    allDay.addEventListener('dragend', dragEnd)
+})
+
+function dragStart() {
+    console.log('dragStart')
+}
+
+function dragEnd() {
+    console.log('dragEnd')
+}
 
 // Drag Start
 
