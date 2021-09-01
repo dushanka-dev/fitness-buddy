@@ -61,9 +61,8 @@ exerciseLists.forEach((exerciseList) => {
     exerciseList.addEventListener('dragend', dragEnd)
 })
 
-allDays.forEach((allDay) => {
-    allDay.addEventListener('dragover', dragOver)
-    allDay.addEventListener('dragend', dragEnd)
+allDays.forEach((day) => {
+    day.addEventListener('dragover', dragOver)
 })
 
 function dragStart() {
@@ -74,6 +73,9 @@ function dragEnd() {
     console.log('dragEnd')
 }
 
+function dragOver() {
+    console.log('dragover')
+}
 // Drag Start
 
 // BMI Inputs
