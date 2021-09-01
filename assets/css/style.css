@@ -23,7 +23,9 @@ body {
 /* Buttons */
 
 .exercise-btn {
-    background-color: rgb(15, 129, 21);
+    background-color: rgb(255, 94, 0);
+    font-size: 18px;
+    font-weight: 700;
     color: #fff;
     font-size: 16px;
     padding: 10px;
@@ -41,10 +43,11 @@ body {
     background-color: crimson;
     color: #fff;
     font-size: 10px;
+    font-weight: 700;
     float: right;
     padding: 2px 4px;
     margin-right: 5px;
-    border-radius: 2px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -60,14 +63,23 @@ body {
 }
 
 .exercise-list {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(50, 101, 196);
     padding: 20px;
+    border-radius: 10px;
+}
+
+.exercise-list h2 {
+    color: #fff;
 }
 
 #exercise-input {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
+}
+
+.exercise-list-area{
+    color: #fff;
 }
 
 #exercise-group {
@@ -77,9 +89,11 @@ body {
 .exercise-items {
     display: block;
     width: 40%;
-    background-color: rgb(75, 75, 77);
+    background-color: rgb(133, 24, 206);
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
     padding: 12px 8px;
     margin: 10px 0;
     border-radius: 10px;
