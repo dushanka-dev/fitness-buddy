@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     // Exercise List Event Listener
-    const exerciseForms = document.getElementById('exercise-form');
-    exerciseForms.addEventListener('submit', addExercises);
+    // const exerciseForms = document.getElementById('exercise-form');
+    document.getElementById('exercise-form').addEventListener('submit', addExercises);
 
-    newList.addEventListener('click', deleteExercises)
+    document.getElementById('exercise-group').addEventListener('click', deleteExercises)
 
 });
 
-const newList = document.getElementById('exercise-group');
+// const newList = document.getElementById('exercise-group');
 
 
 function addExercises(event) {
 
         event.preventDefault();
     
-        // let newList = document.getElementById('exercise-group');
+        let newList = document.getElementById('exercise-group');
         let exerciseInputs = document.getElementById('exercise-input').value;
         let newExercise = document.createElement('li');
         let removeBtn = document.createElement('button');
