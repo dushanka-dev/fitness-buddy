@@ -25,8 +25,8 @@ function addExercises(event) {
         newExercise.innerText = exerciseInputs;
         newList.appendChild(newExercise);
         // Add Draggable Event Listeners
-        newList.addEventListener('dragstart', dragStart)
-        newList.addEventListener('dragend', dragEnd)
+        newExercise.addEventListener('dragstart', dragStart)
+        newExercise.addEventListener('dragend', dragEnd)
         // Remove Btn
         removeBtn.classList.add('delete-btn');
         removeBtn.innerText = 'X';
