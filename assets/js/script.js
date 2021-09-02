@@ -26,7 +26,6 @@ function addExercises(event) {
         newList.appendChild(newExercise);
         // Add Draggable Event Listeners
         newExercise.addEventListener('dragstart', dragStart)
-        newExercise.addEventListener('dragend', dragEnd)
         // Remove Btn
         removeBtn.classList.add('delete-btn');
         removeBtn.innerText = 'X';
@@ -46,7 +45,7 @@ function deleteExercises(event) {
     let exerciseItems = event.target;
     if(exerciseItems.classList[0] === 'delete-btn') {
         let liItem = exerciseItems.parentElement;
-        liItem.remove()
+        liItem.remove();
     }
 }
 
@@ -58,7 +57,6 @@ let dragExercise = null;
 
 exerciseLists.forEach((exerciseList) => {
     exerciseList.addEventListener('dragstart', dragStart)
-    exerciseList.addEventListener('dragend', dragEnd)
 })
 
 allDays.forEach((day) => {
@@ -70,31 +68,25 @@ allDays.forEach((day) => {
 
 function dragStart() {
     dragExercise = this;
-    console.log('dragStart')
-}
-
-function dragEnd() {
-    console.log('dragEnd')
 }
 
 function dragOver(event) {
     event.preventDefault()
-    console.log('dragover')
 }
 
 function dragEnter() {
-    console.log('dragenter')
+    this.style.border = '2px solid red'
 }
 
 function dragLeave() {
-    console.log('dragLeave')
+    this.style.border = 'none'
 }
 
 function dragDrop() {
     this.appendChild(dragExercise)
     // Delete Dragged Exercise Li
     this.addEventListener('click', deleteExercises)
-    console.log('dragDrop')
+    this.style.border = 'none'
 }
 // Drag Start
 
