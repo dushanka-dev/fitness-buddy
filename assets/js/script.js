@@ -69,6 +69,7 @@ allDays.forEach((day) => {
 })
 
 function dragStart() {
+    dragExercise = this;
     console.log('dragStart')
 }
 
@@ -76,7 +77,8 @@ function dragEnd() {
     console.log('dragEnd')
 }
 
-function dragOver() {
+function dragOver(event) {
+    event.preventDefault()
     console.log('dragover')
 }
 
@@ -89,6 +91,7 @@ function dragLeave() {
 }
 
 function dragDrop() {
+    this.appendChild(dragExercise)
     console.log('dragDrop')
 }
 // Drag Start
