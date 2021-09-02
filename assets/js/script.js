@@ -92,6 +92,8 @@ function dragLeave() {
 
 function dragDrop() {
     this.appendChild(dragExercise)
+    // Delete Dragged Exercise Li
+    this.addEventListener('click', deleteExercises)
     console.log('dragDrop')
 }
 // Drag Start
