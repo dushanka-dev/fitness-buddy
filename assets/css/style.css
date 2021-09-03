@@ -29,7 +29,6 @@ body {
     color: #fff;
     font-size: 16px;
     padding: 10px;
-    margin-left: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -51,15 +50,35 @@ body {
     cursor: pointer;
 }
 
+
+#bmi-submit-btn {
+    width: 40%;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    background-color: rgb(253, 137, 4);
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#bmi-submit-btn:hover {
+    background-color: #fff;
+    color: rgb(253, 137, 4);
+}
+
 /* ------ Exercise Sections ------ */
 
 #exercise-container {
     display: grid;
     grid-template-columns: 25% 70%;
-    height: 50vh;
+    max-height: 60vh;
     column-gap: 40px;
     margin: 50px 20px;
     justify-content: center;
+    overflow: hidden;
 }
 
 .exercise-list {
@@ -115,7 +134,7 @@ body {
 .week-days {
     display: flex;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     padding-top: 10px;
 }
 
@@ -153,7 +172,7 @@ body {
     margin-top: 70px;
 }
 
-.bmi-form {
+.bmi-section {
     background-color: rgb(117, 211, 117);
     margin: 0 auto;
     width: 80%;
@@ -161,47 +180,29 @@ body {
     padding: 20px 30px;
 }
 
-.bmi-form form {
+.bmi-section form {
     text-align: center;
     margin: 0 auto;
 }
 
-.bmi-form h3 {
+.bmi-section h3 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.bmi-form form label, input[type=submit]{
+.bmi-section form label, input[type=submit]{
     display: block;
     margin: 8px 0;
 }
 
-.bmi-form input[type=number] {
+.bmi-section input[type=number] {
     width: 40%;
     padding: 10px;
     margin: 2px 0 12px 0;
 }
 
-.bmi-form input[type=submit] {
-    width: 40%;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    background-color: rgb(253, 137, 4);
-    color: #fff;
-    padding: 8px;
-    border-radius: 10px;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-.bmi-form input[type=submit]:hover {
-    background-color: #fff;
-    color: rgb(253, 137, 4);
-}
-
 .result-section {
-    background-color: darkred;
+    background-color: rgb(122, 172, 122);
     width: 100%;
     padding: 20px 0;
     display: flex;
