@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById('exercise-group').addEventListener('click', deleteExercises)
 
+    document.getElementById('bmi-form').addEventListener('submit', bmiResults);
+
 });
 
 // const newList = document.getElementById('exercise-group');
@@ -90,6 +92,19 @@ function dragDrop() {
 }
 
 // BMI Inputs
+
+function bmiResults(event) {
+
+    event.preventDefault();
+
+    let age = document.getElementById('user-age').value;
+    let weight = document.getElementById('user-weight').value;
+    let height = document.getElementById('user-height').value;
+    let bmiBtn = document.getElementById('bmi-submit-btn');
+    let newResult = document.getElementById('bmi-results');
+    
+    let results = (weight / height / height) * 10000;
+}
 
 // BMI Calculations
 
