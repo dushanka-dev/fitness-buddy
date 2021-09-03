@@ -147,7 +147,7 @@ body {
 
 .bmi-container {
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 40%;
     justify-content: center;
     align-items: center;
     margin-top: 70px;
@@ -155,29 +155,58 @@ body {
 
 .bmi-form {
     background-color: rgb(117, 211, 117);
-    margin: 20px 50px;
+    margin: 0 auto;
     width: 80%;
     border-radius: 10px;
     padding: 20px 30px;
 }
 
-.bmi-form h3 {
-    margin-bottom: 20px;
-}
-
-.bmi-form h3, label, input[type=number] {
+.bmi-form form {
+    text-align: center;
     margin: 0 auto;
 }
 
-.bmi-form input[type=number] {
+.bmi-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bmi-form form label, input[type=submit]{
     display: block;
+    margin: 8px 0;
+}
+
+.bmi-form input[type=number] {
     width: 40%;
     padding: 10px;
+    margin: 2px 0 12px 0;
+}
+
+.bmi-form input[type=submit] {
+    width: 40%;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    background-color: rgb(253, 137, 4);
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.bmi-form input[type=submit]:hover {
+    background-color: #fff;
+    color: rgb(253, 137, 4);
 }
 
 .result-section {
     background-color: darkred;
-    height: 50px;
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    
 }
