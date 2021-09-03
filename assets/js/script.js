@@ -88,11 +88,9 @@ function dragDrop() {
     this.addEventListener('click', deleteExercises)
     this.style.border = 'none'
 }
-// Drag Start
 
 // BMI Inputs
 
 // BMI Calculations
 
 // BMI Output
-
