@@ -24,7 +24,6 @@
                 <input type="submit" value="Add to List" class="exercise-btn">
             </form>
             <div>
-                <h3 class="exercise-list-area">Exercises</h3>
                 <ul id="exercise-group">
                     <li draggable="true" class="exercise-items">Bench Press <button class="delete-btn">X</button>
                     </li>
@@ -63,15 +62,6 @@
 
     </section>
 
-
-    <!-- <label for="chest-exercises">Chest:</label>
-           <select name="chest-exercises" id="chest-exercises">
-               <option value="chest-press">Chest Press</option>
-               <option value="dumbell-chest">Dumbell Chest Press</option>
-               <option value="dumbell-flys">Dumbell Flys</option>
-               <option value="bench-press">Bench Press</option>
-           </select> -->
-
     <!-- Submit Button -->
     <div class="submit-container">
         <button type="submit" class="submit-btn">Send to My Email</button>
@@ -79,16 +69,16 @@
 
     <!-- BMI Section -->
     <Section class="bmi-container">
-        <div class="bmi-form">
+        <div class="bmi-section">
             <h3>Calculate your BMI</h3>
-            <form>
+            <form id="bmi-form">
                 <label for="age">Age</label>
-                <input type="number">
+                <input id="user-age" type="number">
                 <label for="weight">Weight</label>
-                <input type="number" placeholder="kg">
+                <input id="user-weight" type="number" placeholder="kg">
                 <label for="height">Height</label>
-                <input type="number" placeholder="cm">
-                <input type="submit" value="Get My BMI">
+                <input id="user-height" type="number" placeholder="cm">
+                <input id="bmi-submit-btn" type="submit" value="Get My BMI">
             </form>
             <div class="result-section">
                 <h4 id="bmi-results">Your Results:</h4>
