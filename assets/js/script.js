@@ -39,7 +39,7 @@ function addExercises(event) {
             confirm("Please Add Exercise!");
             newExercise.remove('li')
         }
-    };
+ };
 
 // Remove Exercises from List
 
@@ -100,16 +100,19 @@ function bmiResults(event) {
     let weight = document.getElementById('user-weight').value;
     let height = document.getElementById('user-height').value;
     let resultSection = document.getElementById('result-section')
-    
-    let calculation = Math.floor((weight / height / height) * 10000);
-    let bmiResults = document.getElementById('bmi-results').innerText = (`Your BMI Result: ${calculation}`);
-    bmiResults;
+    if (weight === '' && height === '') {
+        confirm('Please add your weight and height!')
+    }
+    else if (weight === '') {
+        confirm('Please add your weight!')
+    } else if (height === '') {
+        confirm('Please add your height!')
+    } else {
+        let calculation = Math.floor((weight / height / height) * 10000);
+        resultSection.style.backgroundColor = 'Red'
+        let bmiResults = document.getElementById('bmi-results').innerText = (`Your BMI Result: ${calculation}`);
+        bmiResults;
+    }
 
-    // if (weight === '') {
-    //     confirm('Please add your weight!')
-    // } else if (height === '') {
-    //     confirm('Please add your height!')
-    // } else if (weight || height === '') {
-    //     confirm('Please add your weight and height!')
-    // }
+
 }
