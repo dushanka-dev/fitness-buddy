@@ -97,15 +97,19 @@ function bmiResults(event) {
 
     event.preventDefault();
 
-    let age = document.getElementById('user-age').value;
     let weight = document.getElementById('user-weight').value;
     let height = document.getElementById('user-height').value;
-    let bmiBtn = document.getElementById('bmi-submit-btn');
-    let newResult = document.getElementById('bmi-results');
+    let resultSection = document.getElementById('result-section')
     
-    let results = (weight / height / height) * 10000;
+    let calculation = Math.floor((weight / height / height) * 10000);
+    let bmiResults = document.getElementById('bmi-results').innerText = (`Your BMI Result: ${calculation}`);
+    bmiResults;
+
+    // if (weight === '') {
+    //     confirm('Please add your weight!')
+    // } else if (height === '') {
+    //     confirm('Please add your height!')
+    // } else if (weight || height === '') {
+    //     confirm('Please add your weight and height!')
+    // }
 }
-
-// BMI Calculations
-
-// BMI Output
