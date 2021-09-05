@@ -108,6 +108,7 @@ function touchMove() {
 
 function touchEnd() {
     this.appendChild(dragExercise)
+    this.addEventListener('click', deleteExercises)
     console.log('End')
 }
 
