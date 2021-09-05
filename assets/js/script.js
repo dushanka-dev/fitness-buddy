@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // const newList = document.getElementById('exercise-group');
 
-
 function addExercises(event) {
 
         event.preventDefault();
@@ -28,6 +27,7 @@ function addExercises(event) {
         newList.appendChild(newExercise);
         // Add Draggable Event Listeners
         newExercise.addEventListener('dragstart', dragStart)
+        newExercise.addEventListener('touchstart', handleStart, true);
         // Remove Btn
         removeBtn.classList.add('delete-btn');
         removeBtn.innerText = 'X';
@@ -59,6 +59,8 @@ let dragExercise = null;
 
 exerciseLists.forEach((exerciseList) => {
     exerciseList.addEventListener('dragstart', dragStart)
+    exerciseList.addEventListener('touchstart', handleStart, true);
+    exerciseList.addEventListener('touchmove', touchMove, true)
 })
 
 allDays.forEach((day) => {
@@ -90,6 +92,17 @@ function dragDrop() {
     this.addEventListener('click', deleteExercises)
     this.style.border = 'none'
 }
+
+function handleStart() {
+    dragExercise = this;
+    console.log('Hello')
+}
+
+function touchMove() {
+    console.log('Moving')
+}
+
+
 
 // BMI Inputs
 
