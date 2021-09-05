@@ -68,6 +68,8 @@ allDays.forEach((day) => {
     day.addEventListener('dragenter', dragEnter)
     day.addEventListener('dragleave', dragLeave)
     day.addEventListener('drop', dragDrop)
+
+    day.addEventListener('touchend', touchEnd, true)
 })
 
 function dragStart() {
@@ -93,6 +95,8 @@ function dragDrop() {
     this.style.border = 'none'
 }
 
+// ---- Touch Events 
+
 function handleStart() {
     dragExercise = this;
     console.log('Hello')
@@ -100,6 +104,10 @@ function handleStart() {
 
 function touchMove() {
     console.log('Moving')
+}
+
+function touchEnd() {
+    console.log('End')
 }
 
 
