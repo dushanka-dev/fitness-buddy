@@ -59,8 +59,8 @@ let dragExercise = null;
 
 exerciseLists.forEach((exerciseList) => {
     exerciseList.addEventListener('dragstart', dragStart)
-    exerciseList.addEventListener('touchstart', handleStart, true);
-    exerciseList.addEventListener('touchmove', touchMove, true)
+    exerciseList.addEventListener('touchstart', handleStart, {passive: true});
+    exerciseList.addEventListener('touchmove', touchMove, {passive: true})
 })
 
 allDays.forEach((day) => {
@@ -69,7 +69,7 @@ allDays.forEach((day) => {
     day.addEventListener('dragleave', dragLeave)
     day.addEventListener('drop', dragDrop)
 
-    day.addEventListener('touchend', touchEnd, true)
+    day.addEventListener('touchend', touchEnd, {passive: true})
 })
 
 function dragStart() {
@@ -107,6 +107,7 @@ function touchMove() {
 }
 
 function touchEnd() {
+    this.appendChild(dragExercise)
     console.log('End')
 }
 
