@@ -164,7 +164,7 @@ body {
     padding-top: 40px;
 }
 .day:nth-child(even) {
-    background-color: rgb(210, 213, 219);
+    background-color: rgb(34, 97, 224);
 }
 
 .day h4 {
@@ -257,7 +257,7 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     #exercise-container {
         display: grid;
         grid-template-columns: 100%;
@@ -277,7 +277,7 @@ body {
         text-align: center;
     }
 
-    .email-container{
+    .email-container {
         display: grid;
         grid-template-columns: 50%;
     }
@@ -292,4 +292,52 @@ body {
         grid-template-columns: 70%;
     }
 
+} */
+
+@media screen and (max-width: 1800px) {
+
+    #exercise-container {
+        display: grid;
+        grid-template-columns: 100%;
+        min-height: 78vh;
+    }
+
+    .exercise-list {
+        width:40%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .calendar-container {
+        margin: 50px;
+    }
+
+    .calendar-container h2 {
+        text-align: center;
+    }
+    
+    .week-days {
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+    }
+    
+    .day {
+        position: relative;
+        height: auto;
+        background-color: #e25402;
+        width: 100%;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .email-container {
+        display: grid;
+        grid-template-columns: 70%;
+    }
+
+    .bmi-container {
+        display: grid;
+        grid-template-columns: 80%;
+    }
 }
