@@ -294,7 +294,7 @@ body {
 
 } */
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1200px) {
 
     #exercise-container {
         display: grid;
