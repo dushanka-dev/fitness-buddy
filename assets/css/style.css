@@ -341,3 +341,54 @@ body {
         grid-template-columns: 80%;
     }
 }
+
+@media screen and (max-width: 750px) {
+    .exercise-list {
+        width: 60%;
+    }
+
+    .calendar-container {
+        margin: 50px 20px;
+    }
+
+    .email-container {
+        display: grid;
+        grid-template-columns: 75%;
+    }
+
+}
+    
+
+@media screen and (max-width: 450px) {
+
+    .exercise-list {
+        width: 75%;
+    }
+
+    .email-container {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+
+    .calendar-container {
+        margin: 50px 0;
+    }
+
+    .email-container {
+        display: grid;
+        grid-template-columns: 95%;
+    }
+
+    .bmi-container {
+        display: grid;
+        grid-template-columns: 90%;
+    }
+
+    .bmi-section input[type=number] {
+        width: 70%;
+    }
+
+    #bmi-submit-btn {
+        width: 80%;
+    }
+}
