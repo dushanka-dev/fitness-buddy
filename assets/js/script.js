@@ -19,7 +19,6 @@ function addExercises(event) {
         let newList = document.getElementById('exercise-group');
         let exerciseInputs = document.getElementById('exercise-input').value;
         let newExercise = document.createElement('li');
-        let removeBtn = document.createElement('button');
     
         newExercise.classList.add('exercise-items');
         newExercise.setAttribute('draggable', 'true')
@@ -28,10 +27,13 @@ function addExercises(event) {
         // Add Draggable Event Listeners
         newExercise.addEventListener('dragstart', dragStart)
         newExercise.addEventListener('touchstart', handleStart, true);
-        // Remove Btn
-        removeBtn.classList.add('delete-btn');
-        removeBtn.innerText = 'X';
-        newExercise.appendChild(removeBtn);
+        
+        function addDelete() {
+            let removeBtn = document.createElement('button');
+            removeBtn.classList.add('delete-btn');
+            removeBtn.innerText = 'X';
+            newExercise.appendChild(removeBtn);
+         }
         // Clear field after input
         document.getElementById('exercise-input').value = '';
         // Alert User
@@ -39,7 +41,10 @@ function addExercises(event) {
             confirm("Please Add Exercise!");
             newExercise.remove('li')
         }
- };
+
+        addDelete()
+};
+
 
 // Remove Exercises from List
 
