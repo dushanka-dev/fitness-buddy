@@ -29,6 +29,7 @@ body {
     color: #fff;
     font-size: 16px;
     padding: 10px;
+    margin: 0;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -233,7 +234,7 @@ body {
     margin-bottom: 20px;
 }
 
-.bmi-section form label, input[type=submit]{
+.bmi-section form label, .bmi-section form input[type=submit]{
     display: block;
     margin: 8px 0;
 }
@@ -252,4 +253,43 @@ body {
     align-items: center;
     margin-top: 25px;
     
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+    #exercise-container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .exercise-list {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .calendar-container {
+        margin-top: 50px;
+    }
+
+    .calendar-container h2 {
+        text-align: center;
+    }
+
+    .email-container{
+        display: grid;
+        grid-template-columns: 50%;
+    }
+
+    .email-form label {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .bmi-container {
+        display: grid;
+        grid-template-columns: 70%;
+    }
+
 }
