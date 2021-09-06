@@ -15,34 +15,42 @@ document.addEventListener("DOMContentLoaded", function() {
 function addExercises(event) {
 
         event.preventDefault();
-    
-        let newList = document.getElementById('exercise-group');
-        let exerciseInputs = document.getElementById('exercise-input').value;
-        let newExercise = document.createElement('li');
-    
-        newExercise.classList.add('exercise-items');
-        newExercise.setAttribute('draggable', 'true')
-        newExercise.innerText = exerciseInputs;
-        newList.appendChild(newExercise);
-        // Add Draggable Event Listeners
-        newExercise.addEventListener('dragstart', dragStart)
-        newExercise.addEventListener('touchstart', handleStart, true);
-        
-        function addDelete() {
-            let removeBtn = document.createElement('button');
-            removeBtn.classList.add('delete-btn');
-            removeBtn.innerText = 'X';
-            newExercise.appendChild(removeBtn);
-         }
-        // Clear field after input
-        document.getElementById('exercise-input').value = '';
-        // Alert User
-        if (exerciseInputs === '') {
-            confirm("Please Add Exercise!");
-            newExercise.remove('li')
-        }
 
-        addDelete()
+        function newExercises() {
+            let newList = document.getElementById('exercise-group');
+            let exerciseInputs = document.getElementById('exercise-input').value;
+            let newExercise = document.createElement('li');
+    
+            newExercise.classList.add('exercise-items');
+            newExercise.setAttribute('draggable', 'true');
+            newExercise.innerText = exerciseInputs;
+            newList.appendChild(newExercise);
+
+            // Add Draggable Event Listeners
+            newExercise.addEventListener('dragstart', dragStart);
+            newExercise.addEventListener('touchstart', handleStart, true);
+
+            function addDelete() {
+                let removeBtn = document.createElement('button');
+                removeBtn.classList.add('delete-btn');
+                removeBtn.innerText = 'X';
+                newExercise.appendChild(removeBtn);
+             }
+
+             addDelete()
+
+             // Alert User
+             if (exerciseInputs === '') {
+                confirm("Please Add Exercise!");
+                newExercise.remove('li');
+            };
+    
+        };
+
+        newExercises();
+    
+        // Clear field after input
+    document.getElementById('exercise-input').value = '';
 };
 
 
