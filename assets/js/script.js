@@ -101,7 +101,8 @@ function dragLeave() {
 }
 
 function dragDrop() {
-    this.appendChild(dragExercise)
+    clonedExercises = dragExercise.cloneNode(true)
+    this.appendChild(clonedExercises)
     // Delete Dragged Exercise Li
     this.addEventListener('click', deleteExercises)
     this.style.border = 'none'
