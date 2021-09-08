@@ -7,6 +7,7 @@
 }
 
 body {
+    background-color: #003049;
     font-family: "Poppins", sans-serif;
 }
 
@@ -23,7 +24,7 @@ body {
 /* Buttons */
 
 .exercise-btn {
-    background-color: rgb(255, 94, 0);
+    background-color: #55a630;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -100,7 +101,7 @@ body {
 }
 
 .exercise-list {
-    background-color: rgb(50, 101, 196);
+    background-color: #f77f00;
     padding: 20px;
     border-radius: 10px;
 }
@@ -128,8 +129,8 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #9d4edd;
-    color: rgb(255, 255, 255);
+    background-color: #8338ec;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -142,12 +143,15 @@ body {
 /* ------ Calender Sections ------ */
 
 .calendar-container {
-    background-color:#4895ef;
+    background-color:#f77f00;
+    border-radius: 10px;
 }
 
 .calendar-container h2 {
-    color: #fff;
-    margin: 10px 0 15px 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .week-days {
@@ -164,7 +168,7 @@ body {
     padding-top: 40px;
 }
 .day:nth-child(even) {
-    background-color: rgb(34, 97, 224);
+    background-color: #f7b166;
 }
 
 .day h4 {
@@ -172,7 +176,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(20, 97, 10);
+    background-color: #003049;
     color: #fff;
     padding: 10px 0;
 }
@@ -188,7 +192,7 @@ body {
 .email-form {
     text-align: center;
     padding: 20px;
-    background-color: #dddddd;
+    background-color: #a2d2ff;
     border-radius: 10px;
 }
 
