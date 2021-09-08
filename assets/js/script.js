@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById('exercise-group').addEventListener('click', deleteExercises)
 
+    document.getElementById('email-form').addEventListener('submit', sendEmails);
+
     document.getElementById('bmi-form').addEventListener('submit', bmiResults);
 
 });
@@ -123,6 +125,20 @@ function touchEnd() {
     this.appendChild(dragExercise)
     this.addEventListener('click', deleteExercises)
     console.log('End')
+}
+
+// Emails
+
+function sendEmails(event) {
+    event.preventDefault()
+    let emailCalendar = {
+        userEmail: document.getElementById('user-email').value
+    }
+
+    emailjs.send('service_wn85ily', 'template_stfhhjt', emailCalendar)
+    .then(function() {
+        console.log('Success')
+    })
 }
 
 
