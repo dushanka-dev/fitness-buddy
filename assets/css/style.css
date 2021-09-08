@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #003049;
+    background-color: #38b000;
     font-family: "Poppins", sans-serif;
 }
 
@@ -102,16 +102,17 @@ body {
 }
 
 .exercise-list {
-    background-color: #f77f00;
+    background-color: #baf2bb;
     padding: 20px;
     border-radius: 10px;
 }
 
 .exercise-list h2 {
-    color: #fff;
+    color: #000;
 }
 
 #exercise-input {
+    background-color: rgb(177, 177, 177);
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -144,7 +145,7 @@ body {
 /* ------ Calender Sections ------ */
 
 .calendar-container {
-    background-color:#f77f00;
+    background-color:#fff;
     border-radius: 10px;
 }
 
@@ -169,7 +170,7 @@ body {
     padding-top: 40px;
 }
 .day:nth-child(even) {
-    background-color: #f7b166;
+    background-color: #ade8f4;
 }
 
 .day h4 {
