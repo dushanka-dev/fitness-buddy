@@ -79,6 +79,7 @@ body {
     background-color: rgb(253, 137, 4);
     color: #fff;
     padding: 8px;
+    margin: 20px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -189,24 +190,25 @@ body {
     justify-content: center;
 }
 
-.email-form {
+#email-form {
     text-align: center;
     padding: 20px;
     background-color: #a2d2ff;
     border-radius: 10px;
 }
 
-.email-form label {
+#email-form label {
+    display: block;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
-    margin: 20px 0;
+    margin: 15px 0 5px 0;
 }
 
-.email-form input[type=email] {
+#email-form input[type=text], input[type=email] {
     width: 50%;
     padding: 5px;
-    margin: 20px;
+    margin: 5px;
     border: 1px solid #e25402;
 }
 
