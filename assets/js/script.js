@@ -135,8 +135,7 @@ function sendEmails(event) {
     let emailCalendar = {
         to_name: document.getElementById('full-name').value,
         user_email: document.getElementById('user-email').value,
-        weekDays: document.getElementsByClassName('week-days')
-    };
+    }
 
     emailjs.send('service_wn85ily', 'template_stfhhjt', emailCalendar)
     .then(function() {
