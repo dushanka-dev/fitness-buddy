@@ -66,8 +66,11 @@
     <!-- Submit Button -->
     <section>
         <div class="email-container">
-            <form class="email-form">
-                <label for="user-email">Send Calendar to My Email</label>
+            <form id="email-form">
+                <h3>Send Calendar to My Email</h3>
+                <label for="full-name">Full Name</label>
+                <input type="text" name="fName" id="full-name" placeholder="Full Name">
+                <label for="user-email">Email</label>
                 <input type="email" name="user-email" id="user-email" placeholder="Email">
                 <button type="submit" class="email-submit-btn">Send to My Email</button>
             </form>
@@ -92,5 +95,11 @@
     </Section>
 
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_e5068uLclxioPdsgiuSxE");
+        })();
+    </script>
 </body>
 </html>
