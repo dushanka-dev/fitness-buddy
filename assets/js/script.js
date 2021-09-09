@@ -141,8 +141,11 @@ function sendEmails(event) {
 
     emailjs.send('service_wn85ily', 'template_stfhhjt', emailCalendar)
     .then(function() {
-        console.log('Success')
+        confirm('Thank you for Subscribing!')
     })
+
+    document.getElementById('full-name').value = '';
+    document.getElementById('user-email').value = '';
 }
 
 
