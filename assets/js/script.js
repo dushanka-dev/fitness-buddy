@@ -122,8 +122,10 @@ function touchMove() {
 }
 
 function touchEnd() {
-    this.appendChild(dragExercise)
-    this.addEventListener('click', deleteExercises)
+    clonedExercises = dragExercise.cloneNode(true)
+    this.appendChild(clonedExercises)
+    // Delete Dragged Exercise Li
+    this.addEventListener('touchstart', deleteExercises)
     console.log('End')
 }
 
