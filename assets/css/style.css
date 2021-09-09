@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #38b000;
+    background-color: #343a40;
     font-family: "Poppins", sans-serif;
 }
 
@@ -24,7 +24,7 @@ body {
 /* Buttons */
 
 .exercise-btn {
-    background-color: #55a630;
+    background-color: #008000;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -58,7 +58,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1.2px;
-    background-color: rgb(253, 137, 4);
+    background-color: #008000;
     color: #fff;
     padding: 8px;
     border-radius: 10px;
@@ -102,7 +102,7 @@ body {
 }
 
 .exercise-list {
-    background-color: #baf2bb;
+    background-color: #ff5714;
     padding: 20px;
     border-radius: 10px;
 }
@@ -131,8 +131,8 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #8338ec;
-    color: #fff;
+    background-color: #ffd100;
+    color: #000;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -145,12 +145,12 @@ body {
 /* ------ Calender Sections ------ */
 
 .calendar-container {
-    background-color:#fff;
+    background-color:rgb(226, 226, 226);
     border-radius: 10px;
 }
 
 .calendar-container h2 {
-    color: rgb(0, 0, 0);
+    color: #000000;
     font-size: 18px;
     text-align: center;
     margin: 10px 0;
@@ -170,7 +170,7 @@ body {
     padding-top: 40px;
 }
 .day:nth-child(even) {
-    background-color: #ade8f4;
+    background-color: #ffb091;
 }
 
 .day h4 {
@@ -178,7 +178,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #003049;
+    background-color: #ff5714;
     color: #fff;
     padding: 10px 0;
 }
@@ -224,7 +224,7 @@ body {
 }
 
 .bmi-section {
-    background-color: rgb(117, 211, 117);
+    background-color: #ff9166;
     margin: 0 auto;
     width: 80%;
     border-radius: 10px;
