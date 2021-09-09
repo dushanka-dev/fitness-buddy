@@ -8,12 +8,15 @@
 
 body {
     /* #38b000; */
-    background-color: #0a111d;
+    /* #001e25
+    #ff6b35 */
+    background-color: #001e25;
     font-family: "Poppins", sans-serif;
 }
 
 #logo {
-    color: #fff;
+    color:  #38b000;
+    letter-spacing: 1.2px;
     margin: 20px 0;
     text-align: center;
 }
@@ -95,17 +98,18 @@ body {
 #exercise-container {
     display: grid;
     grid-template-columns: 25% 70%;
-    max-height: 60vh;
+    height: 100%;
     column-gap: 40px;
-    margin: 50px 20px;
+    margin: 60px 0 20px ;
     justify-content: center;
     overflow: hidden;
 }
 
 .exercise-list {
-    background-color: #002efc;
+    background-color: #001e25;
+    border: 5px solid #38b000;
     padding: 20px;
-    border-radius: 10px;
+    max-height: 100%;
 }
 
 .exercise-list h2, .exercise-list h4 {
@@ -132,7 +136,8 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #fe9000;
+    background-color:#38b000;
+    border: 5px solid #001e25;
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -146,13 +151,15 @@ body {
 /* ------ Calender Sections ------ */
 
 .calendar-container {
-    background-color:rgb(226, 226, 226);
+    background-color: #cfcfcf;
     border-radius: 10px;
+    border: 5px solid #38b000;
+
 }
 
 .calendar-container h2 {
-    color: #002efc;
-    font-size: 18px;
+    color: #38b000;
+    font-size: 20px;
     text-align: center;
     margin: 10px 0;
 }
@@ -171,7 +178,7 @@ body {
     padding-top: 40px;
 }
 .day:nth-child(even) {
-    background-color: #c2c6da;
+    background-color: #2a8b00;
 }
 
 .day h4 {
@@ -179,7 +186,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #002efc;
+    background-color: #38b000;
     color: #fff;
     padding: 10px 0;
 }
@@ -195,9 +202,18 @@ body {
 #email-form {
     text-align: center;
     padding: 20px;
-    background-color: #7209b7;
+    margin: 50px 0;
+    background-color: #001e25;
+    border: 5px solid #38b000;
     color: #fff;
     border-radius: 10px;
+}
+
+#email-form h3 {
+    color: #38b000;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 
 #email-form label {
@@ -213,7 +229,7 @@ body {
     width: 50%;
     padding: 5px;
     margin: 5px;
-    border: 1px solid #e25402;
+    border: 1px solid #38b000;
 }
 
 /* BMI Section */
@@ -227,8 +243,8 @@ body {
 }
 
 .bmi-section {
-    background-color: #fff;
-    color: #4361ee;
+    background-color: #38b000;
+    color: #fff;
     margin: 0 auto;
     width: 80%;
     border-radius: 10px;
