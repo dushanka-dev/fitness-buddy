@@ -108,12 +108,17 @@ body {
 .exercise-list {
     background-color: #001e25;
     border: 5px solid #38b000;
+    border-radius: 10px;
     padding: 20px;
     max-height: 100%;
 }
 
 .exercise-list h2, .exercise-list h4 {
     color: #fff;
+}
+
+.exercise-list h4 {
+    margin: 10px 0;
 }
 
 #exercise-input {
@@ -137,7 +142,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color:#38b000;
-    border: 5px solid #001e25;
+    border: 2px solid #001e25;
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -178,7 +183,7 @@ body {
     padding-top: 40px;
 }
 .day:nth-child(even) {
-    background-color: #2a8b00;
+    background-color: #bdbdbd;
 }
 
 .day h4 {
@@ -236,10 +241,11 @@ body {
 
 .bmi-container {
     display: grid;
-    grid-template-columns: 40%;
+    grid-template-columns: 50% 25%;
+    column-gap: 40px;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin: 50px 0;
 }
 
 .bmi-section {
@@ -248,7 +254,7 @@ body {
     margin: 0 auto;
     width: 80%;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
 
 .bmi-section form {
@@ -281,6 +287,13 @@ body {
     align-items: center;
     margin-top: 25px;
     
+}
+
+.bmi-info {
+    color: #fff;
+    border: 2px solid #38b000;
+    padding: 40px 30px;
+    line-height: 30px;
 }
 
 @media screen and (max-width: 1200px) {
