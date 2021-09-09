@@ -102,7 +102,7 @@ body {
 }
 
 .exercise-list {
-    background-color: #ff5714;
+    background-color: #fc682e;
     padding: 20px;
     border-radius: 10px;
 }
@@ -178,7 +178,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #ff5714;
+    background-color: #fc682e;
     color: #fff;
     padding: 10px 0;
 }
@@ -262,60 +262,23 @@ body {
     
 }
 
-/* Media Queries */
-
-/* @media screen and (max-width: 900px) {
-    #exercise-container {
-        display: grid;
-        grid-template-columns: 100%;
-    }
-
-    .exercise-list {
-        width: 60%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .calendar-container {
-        margin-top: 50px;
-    }
-
-    .calendar-container h2 {
-        text-align: center;
-    }
-
-    .email-container {
-        display: grid;
-        grid-template-columns: 50%;
-    }
-
-    .email-form label {
-        display: block;
-        margin-bottom: 0;
-    }
-
-    .bmi-container {
-        display: grid;
-        grid-template-columns: 70%;
-    }
-
-} */
-
 @media screen and (max-width: 1200px) {
 
     #exercise-container {
         display: grid;
         grid-template-columns: 100%;
-        min-height: 78vh;
+        max-height: 100%;
     }
 
     .exercise-list {
-        width:40%;
+        width: 40%;
         margin: 0 auto;
         text-align: center;
     }
 
     .calendar-container {
+        display: block;
+        height: auto;
         margin: 50px;
     }
 
@@ -325,17 +288,15 @@ body {
     
     .week-days {
         display: block;
-        width: 100%;
+        height: auto;
         padding-top: 10px;
     }
     
     .day {
-        position: relative;
-        height: auto;
-        background-color: #e25402;
-        width: 100%;
+        height: 5%;
         text-align: center;
         padding: 40px 0;
+
     }
 
     .email-container {
@@ -350,11 +311,18 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+
+    #exercise-container {
+        max-height: 100%;
+    }
+    
     .exercise-list {
         width: 60%;
     }
 
     .calendar-container {
+        display: block;
+        height: auto;
         margin: 50px 20px;
     }
 
