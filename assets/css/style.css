@@ -7,12 +7,13 @@
 }
 
 body {
-    background-color: #343a40;
+    /* #38b000; */
+    background-color: #0a111d;
     font-family: "Poppins", sans-serif;
 }
 
 #logo {
-    color: #e25402;
+    color: #fff;
     margin: 20px 0;
     text-align: center;
 }
@@ -24,7 +25,7 @@ body {
 /* Buttons */
 
 .exercise-btn {
-    background-color: #008000;
+    background-color: #fbaf00;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -102,17 +103,17 @@ body {
 }
 
 .exercise-list {
-    background-color: #fc682e;
+    background-color: #002efc;
     padding: 20px;
     border-radius: 10px;
 }
 
-.exercise-list h2 {
-    color: #000;
+.exercise-list h2, .exercise-list h4 {
+    color: #fff;
 }
 
 #exercise-input {
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(219, 219, 219);
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
@@ -131,8 +132,8 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffd100;
-    color: #000;
+    background-color: #fe9000;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -150,7 +151,7 @@ body {
 }
 
 .calendar-container h2 {
-    color: #000000;
+    color: #002efc;
     font-size: 18px;
     text-align: center;
     margin: 10px 0;
@@ -170,7 +171,7 @@ body {
     padding-top: 40px;
 }
 .day:nth-child(even) {
-    background-color: #ffb091;
+    background-color: #c2c6da;
 }
 
 .day h4 {
@@ -178,7 +179,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #fc682e;
+    background-color: #002efc;
     color: #fff;
     padding: 10px 0;
 }
@@ -194,11 +195,13 @@ body {
 #email-form {
     text-align: center;
     padding: 20px;
-    background-color: #a2d2ff;
+    background-color: #7209b7;
+    color: #fff;
     border-radius: 10px;
 }
 
 #email-form label {
+    color: #fff;
     display: block;
     font-size: 18px;
     font-weight: 700;
@@ -224,7 +227,8 @@ body {
 }
 
 .bmi-section {
-    background-color: #ff9166;
+    background-color: #fff;
+    color: #4361ee;
     margin: 0 auto;
     width: 80%;
     border-radius: 10px;
@@ -247,6 +251,7 @@ body {
 }
 
 .bmi-section input[type=number] {
+    background-color: #d4d4d4;
     width: 40%;
     padding: 10px;
     margin: 2px 0 12px 0;
