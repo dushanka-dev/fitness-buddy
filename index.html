@@ -24,6 +24,7 @@
                 <input type="submit" value="Add to List" class="exercise-btn">
             </form>
             <div>
+                <h4>Drag exercise to your Weekly List</h4>
                 <ul id="exercise-group">
                     <li draggable="true" class="exercise-items">Bench Press <button class="delete-btn">X</button>
                     </li>
@@ -63,29 +64,53 @@
     </section>
 
     <!-- Submit Button -->
-    <div class="submit-container">
-        <button type="submit" class="submit-btn">Send to My Email</button>
-    </div>
+    <section>
+        <div class="email-container">
+            <form id="email-form">
+                <h3>Sign Up to our Newsletter and get FREE Exercise Tips Weekly</h3>
+                <label for="full-name">Full Name</label>
+                <input type="text" name="fName" id="full-name" placeholder="Full Name">
+                <label for="user-email">Email</label>
+                <input type="email" name="user-email" id="user-email" placeholder="Email">
+                <button type="submit" class="email-submit-btn">Send to My Email</button>
+            </form>
+        </div>
+    </section>
 
     <!-- BMI Section -->
     <Section class="bmi-container">
         <div class="bmi-section">
             <h3>Calculate your BMI</h3>
             <form id="bmi-form">
-                <label for="age">Age</label>
-                <input id="user-age" type="number">
                 <label for="weight">Weight</label>
                 <input id="user-weight" type="number" placeholder="kg">
                 <label for="height">Height</label>
                 <input id="user-height" type="number" placeholder="cm">
                 <input id="bmi-submit-btn" type="submit" value="Get My BMI">
             </form>
-            <div class="result-section">
+            <div class="result-section" id="result-section">
                 <p id="bmi-results"></p>
             </div>
+        </div>
+        <div class="bmi-info">
+            <h4>BMI weight ranges</h4>
+                <p>Less than 18.5 = Underweight
+                <br>
+                Between 18.5 - 24.9 = Healthy Weight
+                <br>
+                Between 25 - 29.9 = Overweight
+                <br>
+                Over 30 = Obese</p>
         </div>
     </Section>
 
     <script src="assets/js/script.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_e5068uLclxioPdsgiuSxE");
+        })();
+    </script>
 </body>
 </html>
