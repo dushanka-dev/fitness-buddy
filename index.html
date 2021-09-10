@@ -82,9 +82,9 @@
         <div class="bmi-section">
             <h3>Calculate your BMI</h3>
             <form id="bmi-form">
-                <label for="weight">Weight</label>
+                <label for="user-weight">Weight</label>
                 <input id="user-weight" type="number" placeholder="kg">
-                <label for="height">Height</label>
+                <label for="user-height">Height</label>
                 <input id="user-height" type="number" placeholder="cm">
                 <input id="bmi-submit-btn" type="submit" value="Get My BMI">
             </form>
@@ -106,8 +106,8 @@
 
     <script src="assets/js/script.js"></script>
     
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
         (function() {
         emailjs.init("user_e5068uLclxioPdsgiuSxE");
         })();

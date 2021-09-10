@@ -62,6 +62,72 @@ Fitness Buddy was deployed using GitHub Pages. Below are the steps:
 
 ## Testing
 
+* W3C Validator
+
+    * Errors and Fixes
+        
+        * Error: The value of the for attribute of the label element must be the ID of a non-hidden form control (From line 85, column 17; to line 85, column 36)
+        * Fix: Updated BMI Form labels with the correct ID's.
+        * Warning: The type attribute is unnecessary for JavaScript resources.
+        * Fix: Removed type attribute from EmailJS script tags.
+
+* W3C CSS Jigsaw Validator
+
+    * No Errors
+
+* Jshint 
+
+    * Errors and Fixes
+
+        * Warnings: Missing semicolons.
+        * Fix: Added semicolons in all the lines of code mentioned.
+        * Warnings: Unnecessary semicolons.
+        * Fix: Removed unnecessary semicolons.
+
+* Responsive Testing
+
+    * For Responsive testing Google Devtools was used to minimise the app to view in different device size to create a responsive app.
+
+    * Used Media Queries to add styling for different device screen sizes. 
+
+* App Feature Testing
+
+    * Exercise List
+        
+        * Added different exercises to input section and clicked Add button to test the exercises list functionality. 
+
+        * Clicked exercise list remove buttons to ensure each exercises can be deleted by the user. 
+
+        * Dragged exercises away from the list to ensure the exercises list are draggable.
+
+    * Calendar Section
+
+        * Exercises items was moved aroubnd the calendar to make sure they are draggables in each calendar day areas.
+
+        * Exercises items remove button clicked to make sure user can remove exercises from the calendar.
+
+        * Tested cloning of exercises to ensure user can clone exercises for better user experience. 
+
+    * Subscribe to Newsletter Testing
+
+        * Tested the input of name and user email fields are cleared once the user clicks submit button.
+
+        * Tested user gets an alert notifying them the form was submitted successfully. 
+
+        * Checked EmailJS admin dashboard to ensure the emails are getting sent successfully.
+
+        * Used console log to ensure successful email submission. 
+
+        * Sent dummy emails to myself to ensure the emails are sent properly and the content is correct.
+
+    * BMI Calculation Section Testing
+
+        * Tested the weight and height inputs to ensure users are able to add their weight and height.
+
+        * Tested the BMI calculation is correct by using my own weight and height to check my BMI.
+
+        * Added the input information and clicked submit to check the user see the results section with their BMI correctly.
+
 ## Credits
 
 * GitPod
