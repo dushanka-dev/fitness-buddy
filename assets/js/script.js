@@ -141,8 +141,6 @@ function sendEmails(event) {
     document.getElementById('user-email').value = '';
 }
 
-
-
 // BMI Inputs
 
 function bmiResults(event) {
@@ -161,10 +159,9 @@ function bmiResults(event) {
         confirm('Please add your height!')
     } else {
         let calculation = Math.floor((weight / height / height) * 10000);
-        resultSection.style.backgroundColor = 'Red'
+        resultSection.style.backgroundColor = 'Grey'
         let bmiResults = document.getElementById('bmi-results').innerText = (`Your BMI Result: ${calculation}`);
         bmiResults;
     }
-
 
 }
