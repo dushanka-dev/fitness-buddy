@@ -62,6 +62,28 @@ Fitness Buddy was deployed using GitHub Pages. Below are the steps:
 
 ## Testing
 
+* W3C Validator
+
+    * Errors and Fixes
+        
+        * Error: The value of the for attribute of the label element must be the ID of a non-hidden form control (From line 85, column 17; to line 85, column 36)
+        * Fix: Updated BMI Form labels with the correct ID's.
+        * Warning: The type attribute is unnecessary for JavaScript resources.
+        * Fix: Removed type attribute from EmailJS script tags.
+
+* W3C CSS Jigsaw Validator
+
+    * No Errors
+
+* Jshint 
+
+    * Errors and Fixes
+
+        * Warnings: Missing semicolons.
+        * Fix: Added semicolons in all the lines of code mentioned.
+        * Warnings: Unnecessary semicolons.
+        * Fix: Removed unnecessary semicolons.
+
 ## Credits
 
 * GitPod
