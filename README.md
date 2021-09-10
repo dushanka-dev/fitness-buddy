@@ -84,6 +84,31 @@ Fitness Buddy was deployed using GitHub Pages. Below are the steps:
         * Warnings: Unnecessary semicolons.
         * Fix: Removed unnecessary semicolons.
 
+* Responsive Testing
+
+    * For Responsive testing Google Devtools was used to minimise the app to view in different device size to create a responsive app.
+
+    * Used Media Queries to add styling for different device screen sizes. 
+
+* App Feature Testing
+
+    * Exercise List
+        
+        * Added different exercises to input section and clicked Add button to test the exercises list functionality. 
+
+        * Clicked exercise list remove buttons to ensure each exercises can be deleted by the user. 
+
+        * Dragged exercises away from the list to ensure the exercises list are draggable.
+
+    * Calendar Section
+
+        * Exercises items was moved aroubnd the calendar to make sure they are draggables in each calendar day areas.
+
+        * Exercises items remove button clicked to make sure user can remove exercises from the calendar.
+
+        * Tested cloning of exercises to ensure user can clone exercises for better user experience. 
+
+
 ## Credits
 
 * GitPod
