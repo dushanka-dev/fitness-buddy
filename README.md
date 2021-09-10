@@ -108,6 +108,25 @@ Fitness Buddy was deployed using GitHub Pages. Below are the steps:
 
         * Tested cloning of exercises to ensure user can clone exercises for better user experience. 
 
+    * Subscribe to Newsletter Testing
+
+        * Tested the input of name and user email fields are cleared once the user clicks submit button.
+
+        * Tested user gets an alert notifying them the form was submitted successfully. 
+
+        * Checked EmailJS admin dashboard to ensure the emails are getting sent successfully.
+
+        * Used console log to ensure successful email submission. 
+
+        * Sent dummy emails to myself to ensure the emails are sent properly and the content is correct.
+
+    * BMI Calculation Section Testing
+
+        * Tested the weight and height inputs to ensure users are able to add their weight and height.
+
+        * Tested the BMI calculation is correct by using my own weight and height to check my BMI.
+
+        * Added the input information and clicked submit to check the user see the results section with their BMI correctly.
 
 ## Credits
 
