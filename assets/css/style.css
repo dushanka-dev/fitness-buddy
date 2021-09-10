@@ -28,13 +28,13 @@ body {
 /* Buttons */
 
 .exercise-btn {
-    background-color: #fbaf00;
+    background-color: #ff6b35;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
     font-size: 16px;
     padding: 10px;
-    margin: 0;
+    margin-left: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .delete-btn {
-    background-color: crimson;
+    background-color:  #ff0000;
     color: #fff;
     font-size: 10px;
     font-weight: 700;
@@ -62,7 +62,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1.2px;
-    background-color: #008000;
+    background-color: #ff6b35;
     color: #fff;
     padding: 8px;
     border-radius: 10px;
@@ -72,7 +72,7 @@ body {
 
 #bmi-submit-btn:hover {
     background-color: #fff;
-    color: rgb(253, 137, 4);
+    color: #ff6b35;
 }
 
 .email-submit-btn {
@@ -80,7 +80,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1.2px;
-    background-color: rgb(253, 137, 4);
+    background-color: #ff6b35;
     color: #fff;
     padding: 8px;
     margin: 20px;
@@ -90,7 +90,7 @@ body {
 
 .email-submit-btn:hover {
     background-color: #fff;
-    color: rgb(253, 137, 4);
+    color: #ff6b35;
 }
 
 /* ------ Exercise Sections ------ */
@@ -182,6 +182,7 @@ body {
     position: relative;
     padding-top: 40px;
 }
+
 .day:nth-child(even) {
     background-color: #bdbdbd;
 }
@@ -341,6 +342,12 @@ body {
     .bmi-container {
         display: grid;
         grid-template-columns: 80%;
+    }
+
+    .bmi-info {
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
     }
 }
 

@@ -25,7 +25,7 @@ function newExercises() {
     
     // Add Draggable Event Listeners
     newExercise.addEventListener('dragstart', dragStart);
-    newExercise.addEventListener('touchstart', handleStart, true);
+    newExercise.addEventListener('touchstart', touchStart, true);
 
     addDelete(newExercise);
 
@@ -73,8 +73,7 @@ let dragExercise = null;
 
 exerciseLists.forEach((exerciseList) => {
     exerciseList.addEventListener('dragstart', dragStart)
-    exerciseList.addEventListener('touchstart', handleStart, {passive: true});
-    exerciseList.addEventListener('touchmove', touchMove, {passive: true})
+    exerciseList.addEventListener('touchstart', touchStart, {passive: true});
 })
 
 allDays.forEach((day) => {
@@ -112,21 +111,15 @@ function dragDrop() {
 
 // ---- Touch Events 
 
-function handleStart() {
+function touchStart() {
     dragExercise = this;
-    console.log('Hello')
-}
-
-function touchMove() {
-    console.log('Moving')
 }
 
 function touchEnd() {
     clonedExercises = dragExercise.cloneNode(true)
     this.appendChild(clonedExercises)
     // Delete Dragged Exercise Li
-    this.addEventListener('touchstart', deleteExercises)
-    console.log('End')
+    this.addEventListener('touchstart', deleteExercises, { passive: true })
 }
 
 // Emails
@@ -148,8 +141,6 @@ function sendEmails(event) {
     document.getElementById('user-email').value = '';
 }
 
-
-
 // BMI Inputs
 
 function bmiResults(event) {
@@ -168,10 +159,9 @@ function bmiResults(event) {
         confirm('Please add your height!')
     } else {
         let calculation = Math.floor((weight / height / height) * 10000);
-        resultSection.style.backgroundColor = 'Red'
+        resultSection.style.backgroundColor = 'Grey'
         let bmiResults = document.getElementById('bmi-results').innerText = (`Your BMI Result: ${calculation}`);
         bmiResults;
     }
-
 
 }
