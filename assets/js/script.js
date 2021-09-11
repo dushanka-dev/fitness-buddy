@@ -197,4 +197,7 @@ function bmiResults(event) {
         bmiResults;
     }
 
+    document.getElementById('user-weight').value = '';
+    document.getElementById('user-height').value = '';
+
 }
