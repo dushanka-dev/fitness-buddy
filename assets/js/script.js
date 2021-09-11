@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Exercise List Event Listener
-    // const exerciseForms = document.getElementById('exercise-form');
+    // Event Listener
+
     document.getElementById('exercise-form').addEventListener('submit', addExercises);
 
     document.getElementById('exercise-group').addEventListener('click', deleteExercises);
@@ -12,7 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// const newList = document.getElementById('exercise-group');
+/* Add Exercises Section
+In this function new exercises items are created.
+Draggable attributes are added to the items.
+New exercise items are appended to the exercise list.
+Call the Dragstart, Touchstart functions with listeners.
+Delete function is added to new exercises.
+Give user alert if input field is empty.
+*/
 function newExercises() {
     let newList = document.getElementById('exercise-group');
     let exerciseInputs = document.getElementById('exercise-input').value;
@@ -23,7 +30,7 @@ function newExercises() {
     newExercise.innerText = exerciseInputs;
     newList.appendChild(newExercise);
     
-    // Add Draggable Event Listeners
+    // Add Draggable/Touch Event Listeners
     newExercise.addEventListener('dragstart', dragStart);
     newExercise.addEventListener('touchstart', touchStart, true);
 
@@ -36,6 +43,12 @@ function newExercises() {
     }
 
 }
+
+/* Add Delete Section
+Create btn and add delete btn class.
+Add the X to the btn.
+Append the new btn to New Exercises.
+*/
 
 function addDelete(newExercise) {
     let removeBtn = document.createElement('button');
@@ -65,7 +78,13 @@ function deleteExercises(event) {
     }
 }
 
-// Drag Exercise to Calendar
+/*
+Drag Exercise to Calendar
+Add exercise items and drop area to variables.
+Use forEach method to call functions for each drag and touch events.
+Add drag and touch events functions.
+*/
+
 
 let exerciseLists = document.querySelectorAll('.exercise-items');
 let allDays = document.querySelectorAll('.drop-area');
@@ -122,7 +141,13 @@ function touchEnd() {
     this.addEventListener('touchstart', deleteExercises, { passive: true });
 }
 
-// Emails
+/*
+Newsletter
+EmailJS function added.
+Created new variables to get values from user inputs.
+Send new variables using emailjs.send
+Clear input fields once user clicks submit.
+*/
 
 function sendEmails(event) {
     event.preventDefault();
@@ -141,7 +166,15 @@ function sendEmails(event) {
     document.getElementById('user-email').value = '';
 }
 
-// BMI Inputs
+
+/*
+BMI Calculator 
+Get user values from input fields.
+Add user alerts if any or all input fields are blank.
+Add drag and touch events functions.
+Calculate user BMI.
+Display BMI results with grey background.
+*/
 
 function bmiResults(event) {
 
