@@ -1,6 +1,6 @@
 # FITNESS BUDDY
 
-Fitness Buddy is an Fitness App built for convenience. The App enables users to add exercises to a list. Then the user can drag the newly created exercise to a calendar area and drop the exercise in any given day of the week. Also, there is a BMI area where users can calculate their personal BMI. 
+Fitness Buddy is an Fitness App built for convenience. The App enables users to add exercises to a list. Then the user can drag the newly created exercise to a calendar area and drop the exercise in any given day of the week. Also, there is a BMI area where users can calculate their personal BMI. On Tablets or Mobile, users can touch exercise and touch again in calendar area to drop exercises.
 
 ![App on All Devices](readme-files/screenshots/Fitness-app-mockup-devices.png)
 
