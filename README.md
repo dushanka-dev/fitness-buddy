@@ -164,5 +164,6 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 * [EmailJS](https://www.emailjs.com/)
 * [YouTube](https://www.youtube.com/)
 * [IconFinder](https://www.iconfinder.com/search?q=exercise&price=free&license=gte__2)
+* [Spell Checker](https://www.internetmarketingninjas.com/online-spell-checker.php)
 
 
