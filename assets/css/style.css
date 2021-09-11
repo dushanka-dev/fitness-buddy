@@ -7,12 +7,11 @@
 }
 
 body {
-    /* #38b000; */
-    /* #001e25
-    #ff6b35 */
     background-color: #001e25;
     font-family: "Poppins", sans-serif;
 }
+
+/* ---- Logo ---- */
 
 #logo {
     color:  #38b000;
@@ -25,7 +24,7 @@ body {
     margin-right: 20px;
 }
 
-/* Buttons */
+/* ---- Buttons ---- */
 
 .exercise-btn {
     background-color: #ff6b35;
@@ -93,7 +92,7 @@ body {
     color: #ff6b35;
 }
 
-/* ------ Exercise Sections ------ */
+/* ---- Add Exercises Sections ---- */
 
 #exercise-container {
     display: grid;
@@ -153,7 +152,7 @@ body {
     cursor: pointer;
 }
 
-/* ------ Calender Sections ------ */
+/* ---- Calender Sections ---- */
 
 .calendar-container {
     background-color: #cfcfcf;
@@ -197,7 +196,7 @@ body {
     padding: 10px 0;
 }
 
-/* Email Section */
+/* ---- Newsletter Section ---- */
 
 .email-container {
     display: grid;
@@ -238,7 +237,7 @@ body {
     border: 1px solid #38b000;
 }
 
-/* BMI Section */
+/* ---- BMI Calculator ---- */
 
 .bmi-container {
     display: grid;
@@ -290,12 +289,16 @@ body {
     
 }
 
+/* ---- BMI Info ---- */
+
 .bmi-info {
     color: #fff;
     border: 2px solid #38b000;
     padding: 40px 30px;
     line-height: 30px;
 }
+
+/* ---- Media Queries ---- */
 
 @media screen and (max-width: 1200px) {
 
