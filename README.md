@@ -60,6 +60,12 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 ## Wireframes
 
+* [Desktop](https://github.com/dushanka-dev/fitness-buddy/blob/main/readme-files/wireframes/desktop/fitness-app-wireframe-desktop.png)
+
+* [Tablet](https://github.com/dushanka-dev/fitness-buddy/blob/main/readme-files/wireframes/tablet/fitness-app-wireframe-tablet.png)
+
+* [Mobile](https://github.com/dushanka-dev/fitness-buddy/blob/main/readme-files/wireframes/mobile/fitness-app-wireframe-mobile.png)
+
 # Deployment
 
 * Fitness Buddy was deployed using GitHub Pages. Below are the steps:
