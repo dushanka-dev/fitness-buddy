@@ -35,6 +35,8 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 * User gets an alert when form is submitted successfully.
 
+* EmailJS was used to send the emails from Javascript.
+
 ## BMI Calclulator
 
 ![BMI Calclulator](readme-files/screenshots/bmi-calculator.png)
