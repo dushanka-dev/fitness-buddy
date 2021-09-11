@@ -2,7 +2,7 @@
 
 Fitness Buddy is an Fitness App built for convenience. The App enables users to add exercises to a list. Then the user can drag the newly created exercise to a calendar area and drop the exercise in any given day of the week. Also, there is a BMI area where users can calculate their personal BMI. 
 
-Image Area
+![App on All Devices](readme-files/screenshots/Fitness-app-mockup-devices.png)
 
 ## Features
 
@@ -130,17 +130,17 @@ Fitness Buddy was deployed using GitHub Pages. Below are the steps:
 
 ## Credits
 
-* GitPod
-* GitHub
-* GitHub Pages
-* Google
-* Google Fonts
-* Stack Overflow
-* W3Schools
-* Coolors
-* Centers for Disease Control and Prevention (BMI Calculation)
-* Patient (BMI Comparison Information)
-* EmailJS
-* IconFinder
+* [Gitpod](https://stackoverflow.com/)
+* [GitHub](https://github.com/)
+* [Google](https://www.google.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [Stack Overflow](https://stackoverflow.com/)
+* [W3Schools](https://www.w3schools.com/)
+* [Coolors](https://coolors.co/palettes/trending)
+* [Centers for Disease Control and Prevention (BMI Calculation)](https://www.cdc.gov/nccdphp/dnpao/growthcharts/training/bmiage/page5_1.html)
+* [Patient (BMI Comparison Information)](https://patient.info/doctor/bmi-calculator-calculator)
+* [EmailJS](https://www.emailjs.com/)
+* [YouTube](https://www.youtube.com/)
+* [IconFinder](https://www.iconfinder.com/search?q=exercise&price=free&license=gte__2)
 
 
