@@ -33,6 +33,8 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 * Once user is subscribed to the list, they will receive weekly newsletter and exercising tips sent directly to their email address.
 
+* User gets an alert when form is submitted successfully.
+
 ## BMI Calclulator
 
 ![BMI Calclulator](readme-files/screenshots/bmi-calculator.png)
@@ -124,6 +126,8 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
     * Clicked exercise list remove buttons to ensure each exercises can be deleted by the user. 
 
     * Dragged exercises items away from the list to ensure the exercises list items are draggable.
+
+    * Checked user gets an alert if the input field is empty and user clicks Add Exercise.
 
 * Calendar Section
 
