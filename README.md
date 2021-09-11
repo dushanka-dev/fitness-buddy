@@ -8,11 +8,15 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 * Exercise List
 
+![Exercise List Area](readme-files/screenshots/exercise-list-section.png)
+
     * Users can create their own exercises list.
     * Users can write personal exercises in the input box and add the exercises to a list with click of a button.
     * Once the exercise are added to the list, users can drag the newly created exercise to the weekly calendar section.
 
 * Weekly Calendar
+
+![Weekly Calendar](readme-files/screenshots/calendar-section.png)
 
     * Users are able to drop the new exercises anywhere inside the calendar section.
 
@@ -22,11 +26,15 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 * Subscribe to Newsletter
 
+![Newsletter Sign Up](readme-files/screenshots/newsletter-section.png)
+
     * Users are able to subscribe to news letter by adding their name and email address in the given fields.
 
     * Once user is subscribed to the list, they will recieve weekly exercising tips sent directly to their email address.
 
 * BMI Calclulator
+
+![BMI Calclulator](readme-files/screenshots/bmi-calculator.png)
 
     * Body Mass Index (BMI) allows users to input their weight and height in metrics.
 
@@ -35,6 +43,8 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
     * BMI Calculator is a great handy tool to keep track of your Body Mass Index.
 
 * BMI Comparision Chart
+
+![BMI Comparision Chart](readme-files/screenshots/bmi-info.png)
 
     * BMI Chart allow users to compare their BMI to see if they are in healthy weight range. 
 
