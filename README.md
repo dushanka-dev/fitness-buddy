@@ -73,6 +73,7 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 # Testing
 
 ## W3C Validator
+* [W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdushanka-dev.github.io%2Ffitness-buddy%2F)
 
 ## Errors and Fixes
         
@@ -83,9 +84,13 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 ## W3C CSS Jigsaw Validator
 
+* [W3C CSS Jigsaw Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=dushanka-dev.github.io%2Ffitness-buddy%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 * No Errors
 
 ## Jshint 
+
+* To check JShint results, please visit [JShint](https://jshint.com/) and add the JS code from the script.js in assets folder.
 
 * Errors and Fixes
 
