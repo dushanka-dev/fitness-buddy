@@ -141,5 +141,6 @@ Fitness Buddy was deployed using GitHub Pages. Below are the steps:
 * Centers for Disease Control and Prevention (BMI Calculation)
 * Patient (BMI Comparison Information)
 * EmailJS
+* IconFinder
 
 
