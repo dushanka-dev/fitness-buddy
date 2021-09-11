@@ -32,7 +32,7 @@ function newExercises() {
     
     // Add Draggable/Touch Event Listeners
     newExercise.addEventListener('dragstart', dragStart);
-    newExercise.addEventListener('touchstart', touchStart, true);
+    newExercise.addEventListener('touchstart', touchStart, {passive: true});
 
     addDelete(newExercise);
 
