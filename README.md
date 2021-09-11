@@ -30,7 +30,7 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 * Users are able to subscribe to news letter by adding their name and email address in the given fields.
 
-* Once user is subscribed to the list, they will recieve weekly exercising tips sent directly to their email address.
+* Once user is subscribed to the list, they will receive weekly exercising tips sent directly to their email address.
 
 ## BMI Calclulator
 
@@ -52,7 +52,7 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 # Features Left to Implement
 
-* Email the User their personalised calendar with exercise list to their emaill address.
+* Email the User their personalised calendar with exercise list to their email address.
 
 * Add Calories counter Calculator.
 
@@ -104,6 +104,7 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
     * Fix: Added semicolons in all the lines of code mentioned.
     * Warnings: Unnecessary semicolons.
     * Fix: Removed unnecessary semicolons.
+    * Warning: 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)
 
 ## Responsive Testing
 
@@ -119,11 +120,11 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
     * Clicked exercise list remove buttons to ensure each exercises can be deleted by the user. 
 
-    * Dragged exercises away from the list to ensure the exercises list are draggable.
+    * Dragged exercises items away from the list to ensure the exercises list items are draggable.
 
 * Calendar Section
 
-    * Exercises items was moved aroubnd the calendar to make sure they are draggables in each calendar day areas.
+    * Exercises items was moved around the calendar to make sure they are draggables in each calendar day areas.
 
     * Exercises items remove button clicked to make sure user can remove exercises from the calendar.
 
@@ -151,7 +152,7 @@ Fitness Buddy is an Fitness App built for convenience. The App enables users to 
 
 # Credits
 
-* [Gitpod](https://stackoverflow.com/)
+* [Gitpod](https://www.gitpod.io/)
 * [GitHub](https://github.com/)
 * [Google](https://www.google.com/)
 * [Google Fonts](https://fonts.google.com/)
